@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.heading {
+  font-weight: bold;
+}
+
+.btn .badge {
+  position: absolute;
+  top: 1.7rem;
+}
+
+@media(max-width: 991px) {
+  .dropdown-menu[data-bs-popper] {
+    width: min-content;
+  }
+  .btn .badge {
+    position: relative;
+    top: -1px;
+  }
+}
