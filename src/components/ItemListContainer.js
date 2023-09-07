@@ -1,9 +1,9 @@
 
-function ItemListContainer() {
+function ItemListContainer({saludo}) {
   return (
       <>
       <h1 className="text-center">
-        Bienvenido
+        {saludo}
       </h1>
       </>
   )
