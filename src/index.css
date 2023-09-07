@@ -16,7 +16,9 @@ h1 {
   position: absolute;
   top: 1.7rem;
 }
-
+.btn {
+  margin-left: 132px;
+}
 
 @media(max-width: 991px) {
   .dropdown-menu[data-bs-popper] {
@@ -25,5 +27,8 @@ h1 {
   .btn .badge {
     position: relative;
     top: -1px;
+  }
+  .btn {
+    margin-left: 0;
   }
 }

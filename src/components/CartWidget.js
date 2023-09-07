@@ -2,7 +2,7 @@ import {Badge, Button} from 'react-bootstrap';
 
 function CartWidget() {
   return (
-    <Button variant="dark">
+    <Button variant="dark" className='mt-1'>
       <i class="fa-solid fa-cart-shopping"></i> <Badge bg="danger">9</Badge>
       <span className="visually-hidden">productos añadidos</span>
     </Button>

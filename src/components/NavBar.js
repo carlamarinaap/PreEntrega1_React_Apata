@@ -1,15 +1,15 @@
-import {Container,Nav,Navbar,NavDropdown} from 'react-bootstrap';
+import {Nav,Navbar,NavDropdown} from 'react-bootstrap';
 import logo from './logo.png';
 import CartWidget from './CartWidget';
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-light">
-      <Container>
-        <Navbar.Brand href="#home"><img src={logo} width="200" alt="logo"/></Navbar.Brand>
+    <Navbar expand="lg" className="bg-light">
+      <div className='container-fluid'>
+        <Navbar.Brand href="#home"><img src={logo} width="150" alt="logo"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+        <Navbar.Collapse id="basic-navbar-nav ">
+          <Nav className="m-auto">
             <Nav.Link href="#home" className='m-0 m-lg-3 fs-5'>Inicio</Nav.Link>
             <Nav.Link href="#link" className='m-0 m-lg-3 fs-5'>Quienes somos</Nav.Link>
             <Nav.Link href="#contacto" className='m-0 m-lg-3 fs-5'>Contactanos</Nav.Link>
@@ -26,7 +26,7 @@ function NavBar() {
           </Nav>
           <CartWidget />
         </Navbar.Collapse>
-      </Container>
+      </div>
     </Navbar>
   );
 }
